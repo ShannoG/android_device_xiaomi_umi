@@ -15,6 +15,7 @@
  */
 
 #define LOG_TAG "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_umi"
+#define LOG_TAG "android.hardware.light@2.0-service"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
