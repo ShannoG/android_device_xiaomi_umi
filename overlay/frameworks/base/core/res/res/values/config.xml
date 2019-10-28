@@ -433,4 +433,7 @@
         <item>9,1</item>
     </string-array>
 
+    <!-- Shows the required view for in-display fingerprint -->
+    <bool name="config_supportsInDisplayFingerprint">true</bool>
+
 </resources>
