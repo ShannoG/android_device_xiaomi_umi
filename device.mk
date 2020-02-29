@@ -29,6 +29,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.xiaomi_umi
+
 # NearFieldCommunication
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
