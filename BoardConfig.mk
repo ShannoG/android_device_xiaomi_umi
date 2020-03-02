@@ -29,6 +29,9 @@ TARGET_KERNEL_CLANG_COMPILE := false
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 
