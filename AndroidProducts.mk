@@ -1,11 +1,14 @@
+#
+# Copyright (C) 2020 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
 PRODUCT_MAKEFILES := \
-      aosp_umi.mk \
-      aosp_cmi.mk
+   $(LOCAL_PATH)/havoc_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-      aosp_umi-eng \
-      aosp_cmi-eng \
-      aosp_umi-user \
-      aosp_cmi-user \
-      aosp_umi-userdebug \ 
-      aosp_cmi-userdebug
+   havoc_umi-eng \
+   havoc_umi-user \
+   havoc_umi-userdebug
+
