@@ -1,6 +1,8 @@
 
 DEVICE_PATH := device/xiaomi/umi
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -16,7 +18,6 @@ TARGET_2ND_CPU_VARIANT := cortex-a75
 
 TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
-
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
