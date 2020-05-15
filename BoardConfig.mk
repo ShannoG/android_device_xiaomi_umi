@@ -31,6 +31,9 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
   TARGET_KERNEL_SOURCE := kernel/xiaomi/umi
 endif
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := umi,cmi
+
 # Platform
 TARGET_BOARD_PLATFORM := kona
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
