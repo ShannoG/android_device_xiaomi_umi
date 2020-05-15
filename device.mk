@@ -19,6 +19,8 @@ PRODUCT_COPY_FILES += \
 # DPI
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=440
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
