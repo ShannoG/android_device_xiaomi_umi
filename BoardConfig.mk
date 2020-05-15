@@ -22,7 +22,7 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom andro
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  4096
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
+TARGET_KERNEL_SOURCE := kernel/xiaomi/umi
 TARGET_KERNEL_CONFIG := umi-perf_defconfig
 BOARD_KERNEL_SEPERATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
@@ -38,3 +38,6 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+
+# Inherit from our vendor
+$(call inherit-product-if-exists, vendor/xiaomi/umi/umi-vendor.mk)
