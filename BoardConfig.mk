@@ -31,6 +31,9 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
   TARGET_KERNEL_SOURCE := kernel/xiaomi/umi
 endif
 
+# Audio
+USE_XML_AUDIO_POLICY_CONF := 1
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := umi,cmi
 
