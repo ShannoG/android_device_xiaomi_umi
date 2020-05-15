@@ -55,3 +55,5 @@ endif
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/umi/umi-vendor.mk)
+
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
