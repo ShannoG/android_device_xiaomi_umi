@@ -25,7 +25,5 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 10
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT := Xiaomi/umi_eea/umi:10/QKQ1.191117.002/V11.0.12.0.QJBEUXM:user/release-keys
-
-
+BUILD_FINGERPRINT := Xiaomi/umi_global/umi:10/QKQ1.191117.002/V11.0.2.0.QJBMIXM:user/release-keys
 
