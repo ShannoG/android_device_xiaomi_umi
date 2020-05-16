@@ -22,12 +22,16 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=440
 
+# Extras
+PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# NFC
+# NearFieldCommunication
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/nxp/opensource/sn100x
+    $(LOCAL_PATH)
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
@@ -48,7 +52,7 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-# Android Fstab
+# fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
@@ -63,8 +67,6 @@ endif
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/umi/umi-vendor.mk)
-
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system.prop
