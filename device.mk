@@ -65,3 +65,5 @@ endif
 $(call inherit-product-if-exists, vendor/xiaomi/umi/umi-vendor.mk)
 
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+-include $(LOCAL_PATH)/product_prop.mk

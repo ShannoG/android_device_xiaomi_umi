@@ -33,3 +33,7 @@ ro.vendor.audio.spk.stereo=true
 ro.hardware.fp.fod=true
 persist.vendor.sys.fp.fod.location.X_Y=441,1808 \
 persist.vendor.sys.fp.fod.size.width_height=197,197
+
+# Headphone Jack
+persist.audio.button_jack.profile=volume \
+    persist.audio.button_jack.switch=0
