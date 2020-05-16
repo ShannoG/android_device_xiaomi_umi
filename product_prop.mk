@@ -55,3 +55,5 @@ persist.vendor.sys.fp.fod.size.width_height=197,197
 persist.audio.button_jack.profile=volume \
     persist.audio.button_jack.switch=0
 
+# Opengles
+ro.opengles.version=196610
