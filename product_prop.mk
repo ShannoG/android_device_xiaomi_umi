@@ -29,6 +29,23 @@ ro.vendor.audio.soundfx.usb=true \
 ro.vendor.audio.surround.support=true \
 ro.vendor.audio.spk.stereo=true
 
+# Bluetooth
+vendor.bluetooth.soc=hastings
+vendor.qcom.bluetooth.soc=hastings
+ro.bluetooth.library_name=libbluetooth_qti.so
+ro.bluetooth.emb_wp_mode=false
+ro.bluetooth.wipower=false
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+ro.vendor.bluetooth.wipower=false
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+ro.bluetooth.a2dp_offload.supported=true
+persist.bluetooth.a2dp_offload.disabled=false
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+
+
 # Fingerprint
 ro.hardware.fp.fod=true
 persist.vendor.sys.fp.fod.location.X_Y=441,1808 \
@@ -37,3 +54,4 @@ persist.vendor.sys.fp.fod.size.width_height=197,197
 # Headphone Jack
 persist.audio.button_jack.profile=volume \
     persist.audio.button_jack.switch=0
+
