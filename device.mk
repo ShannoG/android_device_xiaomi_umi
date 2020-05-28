@@ -73,8 +73,6 @@ PRODUCT_PACKAGES += \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_umi
 endif
 
-# Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/umi/umi-vendor.mk)
 
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system.prop

@@ -72,5 +72,3 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools.py
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
-# Inherit from our vendor
--include vendor/xiaomi/umi/umi-vendor.mk
