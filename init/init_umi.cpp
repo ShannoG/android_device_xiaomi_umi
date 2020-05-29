@@ -45,24 +45,14 @@ void load_properties(const char *model) {
 
 // TODO: Detect cmi
 void vendor_load_properties() {
-    property_set("ro.bootimage.build.date.utc", "1546335651");
-    property_set("ro.build.date.utc", "1546335651");
-    std::string device_region = android::base::GetProperty("ro.boot.hwc", "");
-    if (device_region == "CN")
-    {
-        load_properties("umi");
-    }
-    else if (device_region == "INDIA")
-    {
-        load_properties("umiin");
-    }
-    else if (device_region == "GLOBAL")
-    {
-        load_properties("umi");
-    }
-    else
-    {
-        load_properties("umi");
+    property_override("ro.vendor.build.security_patch", "2099-12-31");
+    property_override("ro.bootimage.build.date.utc", "1546335651");
+    property_override("ro.build.date.utc", "1546335651");
+    const std::string device_hwversion = GetProperty("ro.boot.hwversion", "");
+    if (device_hwversion.at(0) == '1') {
+        model_property_override("cmi", "Mi 10 Pro");
+    } else {
+        model_property_override("umi", "Mi 10");
     }
 }
 
