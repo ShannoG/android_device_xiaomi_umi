@@ -68,11 +68,6 @@ BOARD_USES_METADATA_PARTITION := true
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools.py
 
-#Init
-TARGET_INIT_VENDOR_LIB := libinit_umi
-TARGET_RECOVERY_DEVICE_MODULES := libinit_umi
-TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
