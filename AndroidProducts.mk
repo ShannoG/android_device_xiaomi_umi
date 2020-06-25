@@ -6,9 +6,9 @@
 LOCAL_PATH := device/xiaomi/umi
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_PATH)/havoc_umi.mk
+   $(LOCAL_PATH)/lineage_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-   havoc_umi-eng \
-   havoc_umi-user \
-   havoc_umi-userdebug \
+   lineage_umi-eng \
+   lineage_umi-user \
+   lineage_umi-userdebug \
