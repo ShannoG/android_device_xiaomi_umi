@@ -62,7 +62,8 @@ PRODUCT_COPY_FILES += \
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
-    libantradio
+    libantradio \
+    com.dsi.ant.antradio_library
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
