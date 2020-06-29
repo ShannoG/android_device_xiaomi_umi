@@ -1,3 +1,7 @@
+
+# Inherit vendor
+$(call inherit-product, vendor/xiaomi/umi/umi-vendor.mk)
+
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Audio
