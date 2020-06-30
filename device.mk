@@ -59,7 +59,7 @@ PRODUCT_PACKAGES += \
 
 # NearFieldCommunication
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) hardware/qcom-caf/sm8250
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
@@ -104,7 +104,7 @@ PRODUCT_PACKAGES += \
 
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system.prop
-
+-include $(LOCAL_PATH)/odm.prop
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
