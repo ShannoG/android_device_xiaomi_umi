@@ -105,6 +105,8 @@ PRODUCT_PACKAGES += \
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system.prop
 -include $(LOCAL_PATH)/odm.prop
+-include $(LOCAL_PATH)/vendor.prop
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
