@@ -123,7 +123,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-# Trust
-PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
