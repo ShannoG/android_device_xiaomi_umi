@@ -17,9 +17,9 @@
 LOCAL_PATH := device/xiaomi/umi
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_PATH)/lineage_umi.mk
+   $(LOCAL_PATH)/aosp_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-   lineage_umi-eng \
-   lineage_umi-user \
-   lineage_umi-userdebug \
+   aosp_umi-eng \
+   aosp_umi-user \
+   aosp_umi-userdebug \
