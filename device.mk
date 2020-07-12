@@ -114,7 +114,7 @@ PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.umi
 
 # Props
--include $(LOCAL_PATH)/product_prop.mk
+-include $(LOCAL_PATH)/product.prop
 -include $(LOCAL_PATH)/system.prop
 -include $(LOCAL_PATH)/odm.prop
 -include $(LOCAL_PATH)/vendor.prop
