@@ -63,7 +63,7 @@ PRODUCT_PACKAGES += \
 
 # NearFieldCommunication
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) hardware/qcom-caf/sm8250
+    hardware/qcom-caf/sm8250
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
@@ -95,6 +95,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
@@ -106,6 +110,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.umi
 
+# Props
 -include $(LOCAL_PATH)/product_prop.mk
 -include $(LOCAL_PATH)/system.prop
 -include $(LOCAL_PATH)/odm.prop
