@@ -58,5 +58,5 @@ void vendor_load_properties()
 {
     // fingerprint
     property_override("ro.build.description", " Xiaomi/umi/umi:10/QKQ1.191117.002/20.4.27:user/release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys");
 }
