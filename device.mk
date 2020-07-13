@@ -81,6 +81,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/nfc/libnfc-brcm.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-brcm.conf
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-service
+
+# Copy-out
+ $(LOCAL_PATH)power/android.hardware.power@1.2-service:/vendor/bin/hw/android.hardware.power@1.2-service
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
