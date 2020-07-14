@@ -91,7 +91,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service
 
 # Copy-out
- $(LOCAL_PATH)power/android.hardware.power@1.2-service:/vendor/bin/hw/android.hardware.power@1.2-service
+ $(LOCAL_PATH)/power/android.hardware.power@1.2-service:/vendor/bin/hw/android.hardware.power@1.2-service
 
 # ANT+
 PRODUCT_PACKAGES += \
