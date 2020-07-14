@@ -121,9 +121,6 @@
 # Vulkan
     ro.hardware.vulkan=adreno
 
-# Notch
-    ro.miui.notch=1
-
 # Opengles
     ro.opengles.version=196610
 

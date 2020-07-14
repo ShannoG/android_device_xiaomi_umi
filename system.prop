@@ -4,3 +4,6 @@ ro.netflix.bsp_rev=Q8250-19134-1
 # RCS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.rcs.supported=1
+
+# Notch
+    ro.miui.notch=1
