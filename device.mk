@@ -90,7 +90,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_umi
+    android.hardware.light@2.0-service.xiaomi_sm8250
 
 # NearFieldCommunication
 PRODUCT_SOONG_NAMESPACES += \
