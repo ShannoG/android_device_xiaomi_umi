@@ -124,10 +124,10 @@ PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_umi
 
 # Props
--include $(LOCAL_PATH)/product.prop
--include $(LOCAL_PATH)/system.prop
--include $(LOCAL_PATH)/odm.prop
--include $(LOCAL_PATH)/vendor.prop
+TARGET_PRODUCT_PROP += product.prop
+TARGET_SYSTEM_PROP += system.prop
+TARGET_ODM_PROP += odm.prop
+TARGET_VENDOR_PROP += vendor.prop
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
