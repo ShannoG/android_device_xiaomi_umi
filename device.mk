@@ -123,6 +123,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# Powerhint
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
