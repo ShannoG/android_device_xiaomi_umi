@@ -146,10 +146,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.umi
 
--include $(LOCAL_PATH)/product_prop.mk
--include $(LOCAL_PATH)/system.prop
--include $(LOCAL_PATH)/odm.prop
--include $(LOCAL_PATH)/vendor.prop
+# Props
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product_prop.mk
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Media
 PRODUCT_COPY_FILES += \
