@@ -16,7 +16,30 @@
 # Inherit vendor
 $(call inherit-product, vendor/xiaomi/umi/umi-vendor.mk)
 
+DEVICE_PATH := device/xiaomi/umi
 PRODUCT_CHARACTERISTICS := nosdcard
+HAS_PREBUILT_KERNEL := true
+
+ifeq ($(HAS_PREBUILT_KERNEL), true)
+ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
+endif
+
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+ TARGET_KERNEL_CONFIG := vendor/umi-perf_defconfig
+ TARGET_KERNEL_CLANG_COMPILE := true
+ TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
+endif
+
+
+ifneq ($(TARGET_PREBUILT_KERNEL),)
+ TARGET_KERNEL_CLANG_COMPILE := false
+ LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+ $(warning "local prebuilt is seted to "$(LOCAL_KERNEL))
+ PRODUCT_COPY_FILES := \
+	$(LOCAL_KERNEL):kernel
+else
+ LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
 
 # Audio
 PRODUCT_PACKAGES += \
